@@ -1,0 +1,16 @@
+DATA SCIENCE IN SOFTWARE DEVELOPMENT LIFE CYCLE
+1) Know the BUSINESS PROBLEM <NEEDS COLLABORATION>
+2) Think of Data that will be needed; Make Hypothesis
+3) Collect as much data as possible -> for new model <NEEDS COLLABORATION>
+4) Know about the existing models (if present) <NEEDS COLLABORATION>
+5) Translate Business Problem to Machine Learning problem <NEEDS COLLABORATION>
+6) Establish a test / validation framework -> Make Prototype & see if you get SIGNAL
+7) Create Models -> Fine Tune -> Find Best Solution
+8) Consider Time/Cost effciency as well as Performance
+9) Export model parameter / pipeline settings <NEEDS COLLABORATION>
+10) Apply these in one environment <NEEDS COLLABORATION>
+11) Quality Test on the model -> Finaize/Deploy <NEEDSCOLLABORATION>
+12) Access how well doing with time <NEEDS COLLABORATION>
+
+References:
+1) http://blog.hackerearth.com/winning-tips-machine-learning-competitions-kazanova-current-kaggle-3
