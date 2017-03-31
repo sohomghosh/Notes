@@ -1,0 +1,14 @@
+Hackathons (Data Science Challenges) VS Practical Experience
+1) Converting Business Problem to Machine Learning Problem: Hackathons lack here! as in data science challenges generally machine learning problems with proper objective function is given. In real life, for most cases objective function is not clearly stated and needs to be figured out.
+2) Data is real life is more dirty
+3) Soft-skills, presentation and interpersonal skills: Not judged in hackathons
+4) Integrating the created model with existing APIs [Deployment of the existing model]
+5) Accuracy VS Productionizing: Accuracy matters for hackathons. Thus, people come up with innovative algorithms. In Industry, accuracy with a confidence interval is required. People prefer quick, scalable solutions with moderate accuracies
+
+Similar
+1) Feature Engineering
+2) Building Machine Learning models & tuning them
+3) Coding expertise
+
+#More points to be added in future
+
