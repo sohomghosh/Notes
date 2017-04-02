@@ -1,4 +1,38 @@
 Links:
-https://jessesw.com/XG-Boost/
-https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
-http://blog.hackerearth.com/beginners-tutorial-on-xgboost-parameter-tuning-r
+1) https://jessesw.com/XG-Boost/
+2) https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+    #High Level View
+    i) Choose a relatively high learning rate. Generally a learning rate of 0.1 works but somewhere between 0.05 to 0.3 should work for different problems
+    ii) Determine the optimum number of trees for this learning rate
+    iii) Tune tree-specific parameters ( max_depth, min_child_weight, gamma, subsample, colsample_bytree) for decided learning rate and number of trees
+    iv) Tune regularization parameters (lambda, alpha) for xgboost which can help reduce model complexity and enhance performance
+    v) Lower the learning rate and decide the optimal parameters
+
+  ##In detail
+  Step 1: Fix learning rate and number of estimators for tuning tree-based parameters
+    i) max_depth = 5 : This should be between 3-10. I’ve started with 5 but you can choose a different number as well. 4-6 can be good starting points.
+    ii) min_child_weight = 1 : A smaller value is chosen because it is a highly imbalanced class problem and leaf nodes can have smaller size groups.
+    iii) gamma = 0 : A smaller value like 0.1-0.2 can also be chosen for starting. This will anyways be tuned later.
+    iv) subsample, colsample_bytree = 0.8 : This is a commonly used used start value. Typical values range between 0.5-0.9.
+    iv) scale_pos_weight = 1: Because of high class imbalance.
+  Step 2: Tune max_depth and min_child_weight 
+    param_test1 = {'max_depth':range(3,10,2),
+                    'min_child_weight':range(1,6,2)}
+    param_test2 = {'max_depth':[4,5,6],
+                    'min_child_weight':[4,5,6]}
+    param_test2b = {'min_child_weight':[6,8,10,12]}
+  Step 3: Tune gamma
+      param_test3 = {'gamma':[i/10.0 for i in range(0,5)]}
+  Step 4: Tune subsample and colsample_bytree
+    param_test4 = {'subsample':[i/10.0 for i in range(6,10)],
+    'colsample_bytree':[i/10.0 for i in range(6,10)]}
+    param_test5 = {'subsample':[i/100.0 for i in range(75,90,5)],
+     'colsample_bytree':[i/100.0 for i in range(75,90,5)]}
+  Step 5: Tuning Regularization Parameters
+    param_test6 = {'reg_alpha':[1e-5, 1e-2, 0.1, 1, 100]}
+    param_test7 = {'reg_alpha':[0, 0.001, 0.005, 0.01, 0.05]}
+  Step 6: Reducing Learning Rate
+    
+    
+
+3) http://blog.hackerearth.com/beginners-tutorial-on-xgboost-parameter-tuning-r
