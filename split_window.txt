@@ -1,0 +1,2 @@
+open editor in vi mode
+Esc :split <other_file_name>
