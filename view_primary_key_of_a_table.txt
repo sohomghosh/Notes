@@ -1,0 +1,3 @@
+In Squirrel SQL Client:
+Right Click on Table name under Objects tab;
+Select Script -> Create table Script
