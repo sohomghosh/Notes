@@ -5,4 +5,12 @@
    http://dmlc.ml/2016/03/14/xgboost4j-portable-distributed-xgboost-in-spark-flink-and-dataflow.html
 3) DJango VS Flask
    https://www.git-pull.com/code_explorer/django-vs-flask.html
-4) 
+4) AirFlow Python
+   https://airflow.incubator.apache.org/tutorial.html
+5) Asynchronous Prgoramming Python
+   https://dbader.org/blog/understanding-asynchronous-programming-in-python
+6) Data Structures in Python
+   https://dbader.org/blog/
+7) LinkedList Python
+   https://dbader.org/blog/python-linked-list
+8)   
