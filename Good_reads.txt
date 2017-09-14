@@ -13,4 +13,5 @@
    https://dbader.org/blog/
 7) LinkedList Python
    https://dbader.org/blog/python-linked-list
-8)   
+8) https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe
+9) 
