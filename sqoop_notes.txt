@@ -5,3 +5,7 @@ Reason to use : Sometimes the primary key doesn't have an even distribution of v
 
 
 $CONDITIONS is used by Sqoop process, it will replace with a unique condition expression internally to get the data-set. If you run a parallel import, the map tasks will execute your query with different values substituted in for $CONDITIONS. e.g., one mapper may execute "select bla from foo WHERE (id >=0 AND id < 10000)", and the next mapper may execute "select bla from foo WHERE (id >= 10000 AND id < 20000)" and so on.
+
+
+#Replace unnecessary characters
+replace(replace(replace(replace(<column_name>,chr(13),''),chr(10), ''),',',' '),chr(9),' ')
