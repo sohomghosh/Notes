@@ -9,3 +9,6 @@ $CONDITIONS is used by Sqoop process, it will replace with a unique condition ex
 
 #Replace unnecessary characters
 replace(replace(replace(replace(<column_name>,chr(13),''),chr(10), ''),',',' '),chr(9),' ')
+
+
+nohup sqoop import --connect jdbc:<database_type like db2 or mysql >://<ip>:<port>/<database_name>   --username <username>   --password <password>   --query "<query like select * from table name> where \$CONDITIONS with ur" --m 1 --target-dir <path_in_hadoop> &
