@@ -1,0 +1,5 @@
+#Source: https://stackoverflow.com/questions/19205057/how-to-fix-corrupt-hdfs-files
+#Identify which hdfs blocks having probelms
+hdfs fsck /
+hdfs fsck / | egrep -v '^\.+$' | grep -v eplica
+hdfs fs -rm /path/to/file/with/permanently/missing/blocks
