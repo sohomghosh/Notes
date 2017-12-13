@@ -1,0 +1,20 @@
+###Replace a string by another in vi mode
+Esc :%s/<search_string>/<replace_string>/g
+
+
+###split a screen
+vi file1.py
+Esc :split file2.py
+
+
+###see number lines
+Esc :se nu
+
+###Save and exit
+Esc :wq
+
+###Exit
+Esc :q
+
+###Forceful exit/quit
+Esc:q!
