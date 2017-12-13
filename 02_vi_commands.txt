@@ -18,3 +18,10 @@ Esc :q
 
 ###Forceful exit/quit
 Esc:q!
+
+#Go to a particular line
+Esc :<line_number>
+
+#Go to last line
+Esc :$
+
