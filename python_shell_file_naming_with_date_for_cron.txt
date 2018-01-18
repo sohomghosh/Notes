@@ -1,0 +1,6 @@
+#Shell
+"marks_scored_stored_$(date -d "yesterday 13:00" '+%Y-%m-%d').csv"
+
+#Python
+from datetime import datetime
+"marks_scored_stored_'+str(datetime.date.today() - datetime.timedelta(days=1))+".csv"
