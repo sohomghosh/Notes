@@ -1,8 +1,10 @@
+
+vi file_to_run.ksh
+#The following lines from line number 5 to line number 16 is placed in file file_to_run.ksh
+
 #Points to remember while making .ksh file for cron
 source ~/.bashrc
-
 set +x
-
 hadoop fs -ls /index/ >'/index/hadoop_existence.log'
 flag=`grep 'Error: line' /index/hadoop_existence.log | wc -l`
 
@@ -15,8 +17,14 @@ fi
  
 
 
+
+
+
+
+chmod + x file_to_run.ksh
+
 #To view cronjobs
 crontab -e
 
-#cronjob running all times with log
+#cronjob running all times with log : Remember we need to mention full path before the filename, file_to_run.ksh in this case 
 * * * * * /index/file_to_run.ksh > /index/output.log 2>&1
