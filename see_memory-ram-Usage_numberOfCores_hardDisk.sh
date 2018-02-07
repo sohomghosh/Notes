@@ -3,6 +3,7 @@ nproc
 
 #To see ram usage
 top
+free -mh
 
 #HardDisk
 df -lk
