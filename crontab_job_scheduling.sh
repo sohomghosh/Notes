@@ -28,3 +28,11 @@ crontab -e
 
 #cronjob running all times with log : Remember we need to mention full path before the filename, file_to_run.ksh in this case 
 * * * * * /index/file_to_run.ksh > /index/output.log 2>&1
+
+#Running at 1 am regularly
+0 1 * * * /index/file_to_run.ksh > /index/output.log 2>&1
+
+#Format
+Minute Hour Day_of_month Month_of_day day_of_week /index/file_to_run.ksh > /index/output.log 2>&1
+
+#Reference: https://crontab.guru/every-day-at-1am
