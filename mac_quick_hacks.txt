@@ -1,0 +1,24 @@
+TO SEE ALL APPS
+command + space
+
+LIST OF RUNNING APPLICATIONS
+Command+Option+Escape
+
+KEEP IN FRONT LINE TAB
+two finger click -> options -> Keep in Dock
+
+ALL APPS
+all fingers bring inwards
+
+ANACONDA
+change 
+~/.bashrc 
+~/.bashrc_profile
+~/.zshrc
+
+WHEN GETTING ERROR INSTALLING A SOFTWARE
+To temporarily get around the error message, control-click the application and choose Open
+
+SCREEN SHOT IN MAC
+Command+Shift+3: Takes a full screen screenshot and saves it to the desktop. Command+Shift+4: Lets you select the area to capture, then saves to the desktop. Command+Shift+4+Space: Click an active window to save it to the desktop. Command+Control+Shift+3: Takes a screenshot of the screen, and saves it to the clipboard
+
