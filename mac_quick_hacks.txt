@@ -25,3 +25,7 @@ Command+Shift+3: Takes a full screen screenshot and saves it to the desktop. Com
 CUT AND PASTE FILES & FOLDER
 1st Step: Command+C copies the files or documents in the Finder, note they won’t be ‘cut’ yet
 2nd Step: Command+Option+V pastes the documents into the new desired location on the Mac, cutting it from the prior locating and moving it to the new location
+
+ENTER A FOLDER, COME OUT OF A FOLDER MAC
+Enter: Command DownArrowKey
+Come out: Command UpArrowKey
