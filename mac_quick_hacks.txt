@@ -22,3 +22,6 @@ To temporarily get around the error message, control-click the application and c
 SCREEN SHOT IN MAC
 Command+Shift+3: Takes a full screen screenshot and saves it to the desktop. Command+Shift+4: Lets you select the area to capture, then saves to the desktop. Command+Shift+4+Space: Click an active window to save it to the desktop. Command+Control+Shift+3: Takes a screenshot of the screen, and saves it to the clipboard
 
+CUT AND PASTE FILES & FOLDER
+1st Step: Command+C copies the files or documents in the Finder, note they won’t be ‘cut’ yet
+2nd Step: Command+Option+V pastes the documents into the new desired location on the Mac, cutting it from the prior locating and moving it to the new location
