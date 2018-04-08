@@ -29,3 +29,7 @@ CUT AND PASTE FILES & FOLDER
 ENTER A FOLDER, COME OUT OF A FOLDER MAC
 Enter: Command DownArrowKey
 Come out: Command UpArrowKey
+
+
+INSTALL BREW IN MAC
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
