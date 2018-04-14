@@ -1,3 +1,5 @@
+#https://gsuite.google.com/learning-center/products/sheets/cheat-sheet/sheets-cheat-sheet.pdf
+
 #VLOOKUP with IFERROR
 =IFERROR(VLOOKUP(G2,$'sheet-212'.$G$2:$J$8131,4,1),0)
 ##EXPLANATION::     = IFERROR(VLOOKUP(<CELL_WHOSE_VALUE_IS_TO_BE_LOOKED_FOR>,<TABLE_FROM_WHICH_VALUE_HAS_TO_BE_BROUGHT_ENSURE_ITS_FIRST_COLUMN_MATCHES_WITH_CELL_WHOSE_VALUES_IS_TO_BE_LOOKED_FOR>,<N_WHERE_NTH_COLUMN_FROM_THE_LEFT_OF_TABLE_MENTIONED_JUST_ONE_POSITION_BEFORE_HAS_TO_BE_BROUGHT>,<FLAG_FOR_ASCENDING_OR_DESCENDING>),<VALUE_TO_BE_PUT_IF_NO_MATCH_IS_FOUND>)
@@ -8,4 +10,47 @@
 
 #LIBREOFFICE_calc OR GOOGLE-DOCS_sheet
 Data -> Pivot Table
+
+#SPLIT : text divide to parts
+=SPLIT(text, delimiter, [split_by_each], [remove_empty_text])
+
+#RETURN ELEMENT OF A PARTICULAR ROW NUMBER, COLUMN NUMBER
+=INDEX(reference, row_number, column_number)
+
+#length of text
+=LEN(text)
+
+#extract character from left
+=LEFT(string, number_of_characters)
+
+#extract character from right
+=RIGHT(string, number_of_characters)
+
+#concat
+=CONCAT(value1, value2)
+
+#find index/position of a character in a string
+=FIND("character",text)
+
+#substring
+use LEFT, RIGHT with FIND 
+
+#using regular expression
+=IF(RegExMatch(A1,"Bla"),"YES","NO")
+
+#SEARCH position of a smaller string in a larger string
+=SEARCH(search_for, text_to_search, [starting_at])
+
+#DATES
+=TODAY() - 7
+=DATE(YEAR(TODAY()), MONTH(TODAY()), 1)
+=WEEKDAY("7/20/1969") #By default, counts starting with Sunday = 1.
+
+#TEXT
+=TEXT(text to format, format to display)
+
+"$0.00"       Currency
+"YYYY-MM-DD"  Dates
+"#"           Integer
+"0.000"       Floating numbers
 
