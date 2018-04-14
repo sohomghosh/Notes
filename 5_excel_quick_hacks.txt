@@ -97,5 +97,6 @@ Double click on the chart to update, make changes
 Series means y-axis
 $Play around it$
 
-
+#Resize row height, column width
+double click over the row name or column name
 
