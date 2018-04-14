@@ -90,3 +90,12 @@ Math Returns the sum of a series of numbers and/or cells.
 
 #SUMIF 
 Math Returns a conditional sum across a range. TODAY Date Returns the current date as a date value. VLOOKUP Lookup Searches down the first column of a range for a key and returns the value of a specified cell in the row found.
+
+###PLOTS###
+Select chart from upper right hand side panel
+Double click on the chart to update, make changes
+Series means y-axis
+$Play around it$
+
+
+
