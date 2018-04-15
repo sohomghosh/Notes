@@ -1,4 +1,5 @@
 #https://gsuite.google.com/learning-center/products/sheets/cheat-sheet/sheets-cheat-sheet.pdf
+https://support.google.com/docs/table/25273?hl=en
 
 #Filter
 Select columns : Data (select from tab) -> Filter
@@ -183,6 +184,35 @@ double click over the row name or column name
 =TO_DATE(value)
 =CONVERT(value, start_unit, end_unit)
 =FORECAST(x, data_y, data_x)   #Calculates the expected y-value for a specified x based on a linear regression of a dataset
+=FTEST(range1, range2) #Returns the probability associated with an F-test for equality of variances. Determines whether two samples are likely to have come from populations with the same variance.
+=GEOMEAN(value1, value2)
+=HARMEAN(value1, value2)
+=INTERCEPT(data_y, data_x) #Calculates the y-value at which the line resulting from linear regression of a dataset will intersect the y-axis (x=0).
+=LARGE(data, n) #Returns the nth largest element from a data set, where n is user-defined
+=MAX(value1, [value2, ...])
+=MEDIAN(value1, [value2, ...]
+=MIN(value1, [value2, ...])
+=MODE(value1, [value2, ...])
+=PERCENTILE(data, percentile)
+=PERMUT(n, k) #Returns the value of the normal distribution with mean 0 and standard deviation 1
+=SKEW(value1, value2) #Calculates the skewness of a dataset, which describes the symmetry of that dataset about the mean. 
+=SLOPE(data_y, data_x) #Calculates the slope of the line resulting from linear regression of a dataset. 
+=SMALL(data, n) #Returns the nth smallest element from a data set, where n is user-defined. 
+=STANDARDIZE(value, mean, standard_deviation) #Calculates the normalized equivalent of a random variable given mean and standard deviation of the distribution
+=STDEV(value1, [value2, ...]) #Calculates the standard deviation based on a sample.
+=ZTEST(data, value, [standard_deviation])
+=AVERAGEIF(criteria_range, criterion, [average_range])
+=AVERAGEIFS(average_range, criteria_range1, criterion1, [criteria_range2, criterion2, ...])
+=REPLACE(text, position, length, new_text)
+=REGEXREPLACE(text, regular_expression, replacement)
+=REGEXMATCH(text, regular_expression)
+=REGEXEXTRACT(text, regular_expression)
+=UPPER(text)
+=MID(string, starting_at, extract_length)
+=LOWER(text)
+=LEN(text)
+=LEFT(string, [number_of_characters])
+=FIXED(number, [number_of_places], [suppress_separator]) #Formats a number with a fixed number of decimal places
+=PROPER(text_to_capitalize) #Capitalizes each word in a specified string
 
 
-https://support.google.com/docs/table/25273?hl=en
