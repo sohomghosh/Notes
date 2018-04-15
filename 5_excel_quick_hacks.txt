@@ -103,3 +103,86 @@ $Play around it$
 #Resize row height, column width
 double click over the row name or column name
 
+=GOOGLETRANSLATE(A1, "en" , "ru")
+=TRANSPOSE (A1:F15)
+=TODAY()
+=UPPER(A1)
+=LEN(G7)
+=TRIM(G6) #Remove unnecessary before and after text
+=CONCATENATE(A1,B1)
+=UNIQUE(A1:A6) #creates a unique list from a list having duplicate elements
+=ISEMAIL(A1)
+
+#FILTER
+=filter(range; condition1, condition2,...)
+=filter(A2:A12;A2:A12>37; A2:A12<60)
+
+
+#Substitute
+=substitute(text, search_text, new text, occurrence)
+=substitute(A2, "Jack", "Mike",1)
+#occurrence (optional, in this case “1”) indicates how many occurrences of the search text are to be replaced
+
+=DAYS(end_date, start_date)
+=HOUR(time)
+=MINUTE(time)
+=MONTH(date)
+
+
+#Returns the first n items in a data set after performing a sort.
+=SORTN(range, [n], [display_ties_mode], [sort_column1, is_ascending1], ...)
+
+=sort()
+
+=ISNUMBER(value)
+=ISREF(value)
+=ISTEXT(value)
+=ISURL(value)
+=N(value)
+=ISBLANK(value)
+=ISDATE(value)
+=ISEMAIL(value)
+=ISFORMULA(cell)
+=SWITCH(expression, case1, value1, [default or case2, value2], …)
+=OR(logical_expression1, [logical_expression2, ...])	
+=NOT(logical_expression)
+=IFS(condition1, value1, [condition2, value2], …)
+=IFERROR(value, [value_if_error])
+=IF(logical_expression, value_if_true, value_if_false)
+=AND(logical_expression1, [logical_expression2, ...])
+=COLUMNS(range)      #Returns the number of columns in a specified array or range.
+=ROWS(range)
+=CHOOSE(index, choice1, [choice2, ...])
+=ROW([cell_reference])   #Returns the row number of a specified cell
+=COLUMN([cell_reference])
+=MATCH(search_key, range, [search_type])
+=HYPERLINK(url, [link_label])
+=FLOOR(value, [factor])     #Rounds a number down to the nearest integer multiple of specified significance. 
+=INT(value)
+=RANDBETWEEN(low, high)
+=ROUND(value, [places])
+=ROUNDDOWN(value, [places])
+=ROUNDUP(value, [places])
+=CEILING(value, [factor])
+=SQRT(value)
+=SUM(value1, [value2, ...])
+=SUMIF(range, criterion, [sum_range])
+=EQ(value1, value2) #equality check
+=GT(value1, value2) #Returns `TRUE` if the first argument is strictly greater than the second, and `FALSE` otherwise. Equivalent to the `>` operator
+= GTE(value1, value2) #means >=  
+=LT(value1, value2)
+=LTE(value1, value2)
+=MINUS(value1, value2)
+=MULTIPLY(factor1, factor2)
+=ADD(value1, value2)
+=POW(base, exponent)
+=TO_TEXT(value)
+=TO_PURE_NUMBER(value)
+=TO_PERCENT(value)
+=TO_DOLLARS(value)
+=TO_DATE(value)
+=CONVERT(value, start_unit, end_unit)
+=FORECAST(x, data_y, data_x)   #Calculates the expected y-value for a specified x based on a linear regression of a dataset
+
+
+https://support.google.com/docs/table/25273?hl=en
