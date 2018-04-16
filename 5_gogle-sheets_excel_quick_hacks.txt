@@ -4,6 +4,9 @@ https://support.google.com/docs/table/25273?hl=en
 #Filter
 Select columns : Data (select from tab) -> Filter
 
+#Freeze
+View -> Freeze -> Select how many rows from the top needs to be frozen i.e. kept as header while moving through the sheet
+
 #VLOOKUP with IFERROR
 =IFERROR(VLOOKUP(G2,$'sheet-212'.$G$2:$J$8131,4,1),0)
 ##EXPLANATION::     = IFERROR(VLOOKUP(<CELL_WHOSE_VALUE_IS_TO_BE_LOOKED_FOR>,<TABLE_FROM_WHICH_VALUE_HAS_TO_BE_BROUGHT_ENSURE_ITS_FIRST_COLUMN_MATCHES_WITH_CELL_WHOSE_VALUES_IS_TO_BE_LOOKED_FOR>,<N_WHERE_NTH_COLUMN_FROM_THE_LEFT_OF_TABLE_MENTIONED_JUST_ONE_POSITION_BEFORE_HAS_TO_BE_BROUGHT>,<FLAG_FOR_ASCENDING_OR_DESCENDING>),<VALUE_TO_BE_PUT_IF_NO_MATCH_IS_FOUND>)
