@@ -1,5 +1,9 @@
+############################### LEARNINGS ##################################
+1) in vlookup VLOOKUP(G2,$'sheet-212'.$G$2:$J$8131,4,1) ##The last 1 is important, else it will give erroneous result
+############################################################################
+
 #https://gsuite.google.com/learning-center/products/sheets/cheat-sheet/sheets-cheat-sheet.pdf
-https://support.google.com/docs/table/25273?hl=en
+#https://support.google.com/docs/table/25273?hl=en
 
 #Filter
 Select columns : Data (select from tab) -> Filter
