@@ -1,0 +1,29 @@
+#Problem
+java.io.FileNotFoundException Too many open files
+
+#Solution for user root
+vi /etc/security/limits.conf
+root soft nofile 2048
+root hard nofile 10240
+
+#Avoid stage failure by tuning spark configuration files
+http://site.clairvoyantsoft.com/understanding-resource-allocation-configurations-spark-application/
+
+#Spark Configuration File:  spark-defaults.conf
+spark.master                     spark://master:7077
+spark.sql.tungsten.enabled true
+spark.shuffle.service.enabled true
+spark.dynamicAllocation.enabled true
+spark.shuffle.service.port 7338
+spark.serializer org.apache.spark.serializer.KryoSerializer
+spark.rdd.compress true
+spark.kryoserializer.buffer.max 1024m
+spark.driver.maxResultSize 35g
+spark.sql.caseSensitive true
+spark.driver.memory 35g
+spark.dynamicAllocation.initialExecutors 5
+spark.io.compression.codec org.apache.spark.io.LZ4CompressionCodec
+spark.task.maxFailures 150
+spark.shuffle.memoryFraction 0.3
+spark.network.timeout 900
+spark.executor.memory 35g
