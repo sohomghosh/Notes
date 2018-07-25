@@ -1,0 +1,18 @@
+#change permission of pem file first
+chmod 400 abc.pem
+
+#to access server via ssh
+ssh -i abc.pem user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com
+
+#kill application
+ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com:8088
+#Go to individual application id and kill
+
+#spark ui port
+18080
+
+#see list of yarn applications
+yarn application -list
+
+#see list of all applications
+sudo initctl list
