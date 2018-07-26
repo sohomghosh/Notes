@@ -16,3 +16,6 @@ yarn application -list
 
 #see list of all applications
 sudo initctl list
+
+#s3 bucket access
+aws s3 ls s3://<bucket_name>/folder
