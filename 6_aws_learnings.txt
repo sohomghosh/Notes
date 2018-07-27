@@ -17,5 +17,8 @@ yarn application -list
 #see list of all applications
 sudo initctl list
 
-#s3 bucket access
+#s3 bucket access / see
 aws s3 ls s3://<bucket_name>/folder
+
+#s3 bucket file copy / send
+aws s3 cp abc.csv s3://<bucket_name>/folder
