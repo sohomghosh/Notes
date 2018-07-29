@@ -23,7 +23,8 @@ aws s3 ls s3://<bucket_name>/folder
 #s3 bucket file copy / send
 aws s3 cp abc.csv s3://<bucket_name>/folder
 
-
+#kill yarn application using application id which is obatined from port :8088 or 18080/?showIncomplete=true
+yarn application -kill application_1532556743218_0051
 
 ###############Dealing with s3 files in pandas##########
 import pandas as pd
