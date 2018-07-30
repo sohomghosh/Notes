@@ -26,6 +26,21 @@ aws s3 cp abc.csv s3://<bucket_name>/folder
 #kill yarn application using application id which is obatined from port :8088 or 18080/?showIncomplete=true
 yarn application -kill application_1532556743218_0051
 
+##Scaling/Descaling AWS servers with task nodes : First add a Task node manually from AWS GUI get its id like: ig-3VJAN33OJ9V4V
+#For scaling up 
+aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=10
+
+#For scaling down/ De-scaling
+aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=0
+
+##Scaling/Descaling AWS servers' cores
+Core scaling/ Descaling
+aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=2
+
+#get cluster group id from AWS UI Front end, summary
+aws emr describe-cluster --cluster-id j-D56C3MBAF8VP --query 'Cluster.InstanceGroups[0].RunningInstanceCount'
+
+
 ###############Dealing with s3 files in pandas##########
 import pandas as pd
 import boto3
