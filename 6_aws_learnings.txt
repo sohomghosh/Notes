@@ -37,9 +37,12 @@ aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4
 Core scaling/ Descaling
 aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=2
 
-#get cluster group id from AWS UI Front end, summary
+#Get cluster group id from AWS UI Front end, summary
 aws emr describe-cluster --cluster-id j-D56C3MBAF8VP --query 'Cluster.InstanceGroups[0].RunningInstanceCount'
 
+#To start/stop service
+start <service_name>
+stop <service
 
 ###############Dealing with s3 files in pandas##########
 import pandas as pd
