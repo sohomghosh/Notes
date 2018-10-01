@@ -1,3 +1,11 @@
+#Configuring aws - Reference: https://docs.aws.amazon.com/streams/latest/dev/kinesis-tutorial-cli-installation.html
+pip-install aws-cli
+aws configure
+AWS Access Key ID [None]: AKYBIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: hkalrXUtnFEMI/K7MDHGG/bPxRfiCYEXAMPLEKEE
+Default region name [None]: us-west-2
+Default output format [None]: json
+
 #change permission of pem file first
 chmod 400 abc.pem
 
