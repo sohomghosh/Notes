@@ -6,11 +6,15 @@ AWS Secret Access Key [None]: hkalrXUtnFEMI/K7MDHGG/bPxRfiCYEXAMPLEKEE
 Default region name [None]: us-west-2
 Default output format [None]: json
 
-#change permission of pem file first
+#change permission of pem file first #else get erroes like Permissions 0644 for 'abc.pem' are too open.
 chmod 400 abc.pem
 
 #to access server via ssh
-ssh -i abc.pem user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com
+ssh -i abc.pem ec2-user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com
+
+#to copy file using scp
+scp -i abc.pem ec2-user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com:/tmp/file.csv /path_of_local_file_system/
+
 
 #kill application
 ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com:8088
