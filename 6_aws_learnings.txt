@@ -15,6 +15,13 @@ ssh -i abc.pem ec2-user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com
 #to copy file using scp
 scp -i abc.pem ec2-user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com:/tmp/file.csv /path_of_local_file_system/
 
+#Default login for EMR : jupyter hub
+user_id : jovyan
+password : jupyter
+
+#pandas install in EMR so that it becomes available from pyspark3 jupyter notebook and toPandas() work
+#login to EMR cluster from terminal using ssh : ssh -i abc.pem ec2-user@ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com
+$sudo python3 -m pip install pandas
 
 #kill application
 ec2-8757859vftsgjvbvbsv-ap-south-1.compute.amazonaws.com:8088
