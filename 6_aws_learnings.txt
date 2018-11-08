@@ -70,7 +70,7 @@ aws emr describe-cluster --cluster-id j-D56C3MBAF8VP --query 'Cluster.InstanceGr
 start <service_name>
 stop <service
 
-###############Dealing with s3 files in pandas##########
+###############Dealing : Reading / Writing with s3 files in pandas##########
 import pandas as pd
 import boto3
 from io import StringIO
@@ -81,10 +81,13 @@ file_name = "your_file.csv"
 s3 = boto3.client('s3') 
 # 's3' is a key word. create connection to S3 using default config and all buckets within S3
 
+#Read files / pandas dataframe from s3
 obj = s3.get_object(Bucket= bucket, Key= file_name) 
 # get object and file (key) from bucket
 initial_df = pd.read_csv(obj['Body']) # 'Body' is a key word
 
+
+#Write files / pandas dataframe into s3
 csv_buffer = StringIO()
 initial_df.to_csv(csv_buffer)
 s3_resource = boto3.resource('s3')
@@ -93,6 +96,7 @@ if resp['ResponseMetadata']['HTTPStatusCode'] == 200:
     print("All ok")
 else:
     print("file not inserted in s3")
+
 
 #Reference: https://stackoverflow.com/questions/43355074/read-a-csv-file-from-aws-s3-using-boto-and-pandas
 #########################################################
