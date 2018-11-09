@@ -53,10 +53,13 @@ nohup aws s3 cp folder_name_in_local_file_system s3://<bucket_name>/folder --rec
 yarn application -kill application_1532556743218_0051
 
 ##Scaling/Descaling AWS servers with task nodes : First add a Task node manually from AWS GUI get its id like: ig-3VJAN33OJ9V4V; Clusters (Top Left) -> Click over the cluster name (Hyperlinked) -> Click on Hardware (Find id associated with TASK)
-#For scaling up 
+#NOTE : ONE NEEDS TO BE ROOT TO SCALE / DESCALE NODES; ssh to the aws servers then be root (sudo su -)
+#For scaling up / sacle
+sudo su -
 aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=10
 
-#For scaling down/ De-scaling
+#For scaling down/ De-scaling / de-scale
+sudo su -
 aws emr modify-instance-groups --instance-groups InstanceGroupId=ig-3VJAN33OJ9V4V,InstanceCount=0
 
 ##Scaling/Descaling AWS servers' cores
