@@ -76,6 +76,10 @@ aws emr describe-cluster --cluster-id j-D56C3MBAF8VP --query 'Cluster.InstanceGr
 start <service_name>
 stop <service
 
+#Run spark applications with spark submit
+nohup spark-submit --master yarn --num-executors 27 --executor-cores 2 --executor-memory 16g --driver-memory 8g  code.py &
+
+
 ###############Dealing : Reading / Writing with s3 files in pandas##########
 import pandas as pd
 import boto3
