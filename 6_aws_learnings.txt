@@ -46,7 +46,7 @@ aws s3 cp abc.csv s3://<bucket_name>/folder
 aws s3 cp folder_name_in_local_file_system s3://<bucket_name>/folder --recursive
 
 #folder with files send from s3 bucket to local
-aws s3 cp s3://<bucket_name>/folder folder_name_in_local_file_system --recursive
+aws s3 cp s3://<bucket_name>/folder <path_to_folder_name_in_local_file_system> --recursive
 
 #folder with files send from local to s3 bucket run in background
 nohup aws s3 cp folder_name_in_local_file_system s3://<bucket_name>/folder --recursive &
