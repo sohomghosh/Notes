@@ -1,0 +1,20 @@
+*1) Hill Climb ensemble https://www.kaggle.com/hhstrand/hillclimb-ensembling
+2) fast roc_auc computation ans with weights https://www.kaggle.com/c/microsoft-malware-prediction/discussion/80182
+*3) Bayesian Optimization https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt
+4) Adversarial validation
+5) AutoML with h20 https://kaggle.com/tunguz/ieee-with-h2o-automl
+6) SHA Hash key h = hashlib.sha256(s.encode('utf-8')).hexdigest()[0:15] https://www.kaggle.com/super13579/find-client-by-d1-and-card-leak-use-on-submit
+7) Categorical feature embedding by using LDA/NMF/LSA https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/discussion/56475#latest-436248
+8) Matrix Factorization - https://github.com/jfpuget/LibFM_in_Keras/blob/master/keras_blog.ipynb https://www.ibm.com/developerworks/community/blogs/jfp/entry/Implementing_Libfm_in_Keras?lang=en
+9) Denoising Autoencoder preprocessing
+10) Fast metric computation MAEs https://www.kaggle.com/artgor/eda-and-models
+11) Using Kaggle GPU : https://www.kaggle.com/c/santander-customer-transaction-prediction/discussion/89004
+12) Extended TimeSeriesSplitter to split time-series data for back-testing and evaluation : https://www.kaggle.com/mpearmain/extended-timeseriessplitter
+13) Area under Precision Recall Curve (More appropriate when we need to give more weightage to positive class) reference: https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/
+  from sklearn.metrics import precision_recall_curve, auc
+  precision, recall, thresholds = precision_recall_curve(y_true, y_scores_predicted)
+  area_under_curve = auc(recall, precision)
+14) HIVE: Refer a column starting with _ such as _col1 as `_col1`  [NOT AS '_col1']
+15) Xdeep fm https://www.kaggle.com/guoday/xdeepfm-baseline
+16) SQL: For executing OREDERBY on certain columns, the columns must be preset in the select statement
+17)
